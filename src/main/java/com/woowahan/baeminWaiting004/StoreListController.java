@@ -19,7 +19,7 @@ public class StoreListController {
 	@Autowired
 	private StoreService storeService;
 
-	@RequestMapping(value = "/store/list", method = RequestMethod.GET)
+	@RequestMapping(value = "/store/list", method = RequestMethod.GET, produces="text/plain;charset=UTF-8")
 	@ResponseBody
 	public String storeListAll() throws JsonProcessingException{
 		
