@@ -11,6 +11,7 @@
 	<form method="post">
 		<textarea name="sampleJson"></textarea>
 		<button type="submit">저장</button>
+		<input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
 	</form>
 </body>
 </html>

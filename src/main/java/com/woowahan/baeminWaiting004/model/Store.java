@@ -13,31 +13,31 @@ public class Store {
 	
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY) //auto increment일 경우
-	@Column(name="id")
+	@Column(name="store_id")
 	private int id;
 	
-	@Column(name="title")
+	@Column(name="store_title")
 	private String title;
 	
-	@Column(name="address")
+	@Column(name="store_addr")
 	private String address;
 	
-	@Column(name="latitude")
+	@Column(name="store_latitude")
 	private String latitude;
 	
-	@Column(name="longitude")
+	@Column(name="store_longitude")
 	private String longitude;
 	
-	@Column(name="description")
+	@Column(name="store_desc")
 	private String description;
 	
-	@Column(name="tel")
+	@Column(name="store_tel")
 	private String tel;
 	
-	@Column(name="img_url")
+	@Column(name="store_img_url")
 	private String imgUrl;
 	
-	@Column(name="is_opened")
+	@Column(name="store_is_opened")
 	private int opened;
 
 	public int getId() {
