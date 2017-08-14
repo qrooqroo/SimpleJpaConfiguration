@@ -1,4 +1,4 @@
-package com.woowahan.baeminWaiting004;
+package com.woowahan.baeminWaiting004.controller;
 
 import java.util.List;
 

@@ -21,4 +21,23 @@ public class StoreServiceImpl implements StoreService{
 		
 		return stores;
 	}
+
+	@Override
+	public void addStore(String storeName, String storeTel, String storeAddress, String storeDescription,
+			String storeLatitude, String storeLongitude, int storeIsOpened) {
+		
+		Store store = new Store();
+		store.setTitle(storeName);
+		store.setTel(storeTel);
+		store.setAddress(storeAddress);
+		store.setDescription(storeDescription);
+		store.setLatitude(storeLatitude);
+		store.setLongitude(storeLongitude);
+		if(storeIsOpened == 0){
+			store.setOpened(false);
+		}else{
+			store.setOpened(true);
+		}
+		storeRepository.save(store);
+	}
 }

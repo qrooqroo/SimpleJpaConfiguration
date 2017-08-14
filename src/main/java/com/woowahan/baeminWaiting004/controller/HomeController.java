@@ -1,4 +1,4 @@
-package com.woowahan.baeminWaiting004;
+package com.woowahan.baeminWaiting004.controller;
 
 import java.text.DateFormat;
 import java.util.Date;
