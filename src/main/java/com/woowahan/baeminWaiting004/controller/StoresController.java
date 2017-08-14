@@ -16,14 +16,14 @@ import com.woowahan.baeminWaiting004.model.StoreJsonType;
 import com.woowahan.baeminWaiting004.service.StoreService;
 
 @Controller
-public class StoreListController {
+public class StoresController {
 	
 	@Autowired
 	private StoreService storeService;
 
-	@RequestMapping(value = "/store/list", method = RequestMethod.GET, produces="text/plain;charset=UTF-8")
+	@RequestMapping(value = "/stores", method = RequestMethod.GET, produces="text/plain;charset=UTF-8")
 	@ResponseBody
-	public String storeListAll() throws JsonProcessingException{
+	public String getStores() throws JsonProcessingException{
 		
 		List<Store> stores = storeService.getAllStores();
 		List<StoreJsonType> storeJsonTypeList = new ArrayList<StoreJsonType>();

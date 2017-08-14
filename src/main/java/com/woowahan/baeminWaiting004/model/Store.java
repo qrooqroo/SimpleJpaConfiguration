@@ -8,7 +8,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="STORES")
+@Table(name="STORE")
 public class Store {
 	
 	@Id
@@ -28,10 +28,16 @@ public class Store {
 	@Column(name="longitude")
 	private String longitude;
 	
+	@Column(name="description")
 	private String description;
 	
+	@Column(name="tel")
 	private String tel;
 	
+	@Column(name="img_url")
+	private String imgUrl;
+	
+	@Column(name="is_opened")
 	private int opened;
 
 	public int getId() {
@@ -96,6 +102,14 @@ public class Store {
 
 	public void setOpened(int opened) {
 		this.opened = opened;
+	}
+
+	public String getImgUrl() {
+		return imgUrl;
+	}
+
+	public void setImgUrl(String imgUrl) {
+		this.imgUrl = imgUrl;
 	}
 
 }
