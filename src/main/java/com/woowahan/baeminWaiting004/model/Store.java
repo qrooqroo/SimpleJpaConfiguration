@@ -32,7 +32,7 @@ public class Store {
 	
 	private String tel;
 	
-	private boolean opened;
+	private int opened;
 
 	public int getId() {
 		return id;
@@ -90,11 +90,12 @@ public class Store {
 		this.tel = tel;
 	}
 
-	public boolean isOpened() {
+	public int getOpened() {
 		return opened;
 	}
 
-	public void setOpened(boolean opened) {
+	public void setOpened(int opened) {
 		this.opened = opened;
 	}
+
 }

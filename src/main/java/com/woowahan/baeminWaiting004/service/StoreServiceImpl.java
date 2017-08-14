@@ -33,11 +33,7 @@ public class StoreServiceImpl implements StoreService{
 		store.setDescription(storeDescription);
 		store.setLatitude(storeLatitude);
 		store.setLongitude(storeLongitude);
-		if(storeIsOpened == 0){
-			store.setOpened(false);
-		}else{
-			store.setOpened(true);
-		}
+		store.setOpened(storeIsOpened);
 		storeRepository.save(store);
 	}
 }
