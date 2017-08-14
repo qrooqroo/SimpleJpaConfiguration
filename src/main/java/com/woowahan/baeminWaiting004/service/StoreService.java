@@ -8,6 +8,6 @@ public interface StoreService {
 
 	List<Store> getAllStores();
 
-	void addStore(String storeName, String storeTel, String storeAddress, String storeDescription, String storeLatitude,
-			String storeLongitude, int storeIsOpened);
+	void addStore(String storeName, String storeTel, String storeAddress, String storeImgUrl, 
+			String storeDescription, String storeLatitude, String storeLongitude, int storeIsOpened);
 }

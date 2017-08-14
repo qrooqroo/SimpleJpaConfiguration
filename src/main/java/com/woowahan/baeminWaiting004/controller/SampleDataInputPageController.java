@@ -33,7 +33,7 @@ public class SampleDataInputPageController {
 		List<SampleJsonObject> sampleJsonObjectList = objectMapper.readValue(sampleJson, TypeFactory.defaultInstance().constructCollectionType(List.class, SampleJsonObject.class));
 		for (int i = 0; i < sampleJsonObjectList.size(); i++) {
 			SampleJsonObject sampleJsonObject = sampleJsonObjectList.get(i);
-			storeService.addStore(sampleJsonObject.getStoreName(), sampleJsonObject.getStoreTel(), sampleJsonObject.getStoreAddress(), 
+			storeService.addStore(sampleJsonObject.getStoreName(), sampleJsonObject.getStoreTel(), sampleJsonObject.getStoreAddress(), sampleJsonObject.getStoreImgUrl(),
 					sampleJsonObject.getStoreDescription(), sampleJsonObject.getStoreLatitude(), sampleJsonObject.getStoreLongitude(), sampleJsonObject.getStoreIsOpened());
 			
 		}

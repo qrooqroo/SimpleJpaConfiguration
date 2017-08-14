@@ -23,13 +23,14 @@ public class StoreServiceImpl implements StoreService{
 	}
 
 	@Override
-	public void addStore(String storeName, String storeTel, String storeAddress, String storeDescription,
+	public void addStore(String storeName, String storeTel, String storeAddress, String storeImgUrl, String storeDescription,
 			String storeLatitude, String storeLongitude, int storeIsOpened) {
 		
 		Store store = new Store();
 		store.setTitle(storeName);
 		store.setTel(storeTel);
 		store.setAddress(storeAddress);
+		store.setImgUrl(storeImgUrl);
 		store.setDescription(storeDescription);
 		store.setLatitude(storeLatitude);
 		store.setLongitude(storeLongitude);

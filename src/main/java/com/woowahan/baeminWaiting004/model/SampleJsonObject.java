@@ -2,7 +2,8 @@ package com.woowahan.baeminWaiting004.model;
 
 public class SampleJsonObject {
 
-	private String storeDescription, storeLatitude, storeTel, storeLongitude, storeAddress, storeName;
+	private String storeDescription, storeLatitude, storeTel, storeLongitude, 
+	storeAddress, storeName, storeImgUrl;
 	
 	private int storeIsOpened;
 
@@ -60,5 +61,13 @@ public class SampleJsonObject {
 
 	public void setStoreIsOpened(int storeIsOpened) {
 		this.storeIsOpened = storeIsOpened;
+	}
+
+	public String getStoreImgUrl() {
+		return storeImgUrl;
+	}
+
+	public void setStoreImgUrl(String storeImgUrl) {
+		this.storeImgUrl = storeImgUrl;
 	}
 }
